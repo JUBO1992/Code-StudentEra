@@ -1,0 +1,674 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\2010302590054.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\2010302590054.ico"
+IDR_MY2010TYPE          ICON    DISCARDABLE     "res\\2010302590054Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_DRAWG               BITMAP  DISCARDABLE     "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_DRAW_DDALINE
+    BUTTON      ID_DRAW_BCIRCLE
+    BUTTON      ID_CURVE_BEZIER
+    BUTTON      ID_DRAW_POLYGON
+    BUTTON      ID_DRAW_CHAR
+    SEPARATOR
+    BUTTON      ID_TRANS_MOVE
+    BUTTON      ID_TRANS_ROTATE
+    BUTTON      ID_TRANS_ZOOM
+    BUTTON      ID_TRANS_SYMMETRY
+    SEPARATOR
+    BUTTON      ID_FILL
+    BUTTON      ID_FILL_SCANLINE
+    BUTTON      ID_CUT_POLYGON
+    SEPARATOR
+    BUTTON      ID_CUBESPIN
+    BUTTON      ID_GLOBE_LIGHT
+    BUTTON      ID_3DSPIN
+END
+
+IDR_DRAWG TOOLBAR DISCARDABLE  25, 25
+BEGIN
+    BUTTON      ID_DRAW_BLINE
+    BUTTON      ID_DRAW_PNCIRCLE
+    BUTTON      ID_CURVE_BSAMPLE
+    BUTTON      ID_FILL_EDGE
+    BUTTON      ID_CUT_CS
+    BUTTON      ID_DRAW_CHAR2
+    BUTTON      32805
+    BUTTON      ID_BUTTON32828
+    BUTTON      ID_BUTTON32829
+    BUTTON      ID_START
+    BUTTON      ID_STOP
+    BUTTON      ID_RESTART
+    BUTTON      ID_END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "打印(&P)...\tCtrl+P",         ID_FILE_PRINT
+        MENUITEM "打印预览(&V)",                ID_FILE_PRINT_PREVIEW
+        MENUITEM "打印设置(&R)...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "最近文件",                    ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+    END
+    POPUP "图形生成"
+    BEGIN
+        MENUITEM "DDA直线",                     ID_DRAW_DDALINE
+        MENUITEM "中点直线",                    ID_DRAW_MIDLINE
+        MENUITEM "Bresenham直线",               ID_DRAW_BLINE
+        MENUITEM SEPARATOR
+        MENUITEM "Bresenham圆",                 ID_DRAW_BCIRCLE
+        MENUITEM "正负法圆",                    ID_DRAW_PNCIRCLE
+        MENUITEM "多边形",                      ID_DRAW_POLYGON
+        MENUITEM SEPARATOR
+        MENUITEM "Bezier曲线",                  ID_CURVE_BEZIER
+        MENUITEM "B样条曲线",                   ID_CURVE_BSAMPLE
+        MENUITEM SEPARATOR
+        MENUITEM "字符",                        ID_DRAW_CHAR
+    END
+    POPUP "设置"
+    BEGIN
+        MENUITEM "线宽设置",                    ID_LINEWIDE
+        MENUITEM "颜色设置",                    ID_GRAPH_COLOR
+        MENUITEM "字符",                        ID_DRAW_CHAR2
+    END
+    POPUP "图形变换"
+    BEGIN
+        MENUITEM "平移",                        ID_TRANS_MOVE
+        MENUITEM "旋转",                        ID_TRANS_ROTATE
+        MENUITEM "缩放",                        ID_TRANS_ZOOM
+        MENUITEM "对称变换",                    ID_TRANS_SYMMETRY
+    END
+    POPUP "图形显示"
+    BEGIN
+        MENUITEM "扫描线填充算法",              ID_FILL_SCANLINE
+        MENUITEM "边缘填充",                    ID_FILL_EDGE
+        MENUITEM "种子填充",                    ID_FILL_SEED
+        MENUITEM "填充",                        ID_FILL
+    END
+    POPUP "二维裁剪"
+    BEGIN
+        MENUITEM "Coben-Sutherland算法",        ID_CUT_CS
+        MENUITEM "多边形裁剪",                  ID_CUT_POLYGON
+        MENUITEM "圆裁剪",                      ID_CUT_CIRCLE
+    END
+    POPUP "三维表现"
+    BEGIN
+        MENUITEM "立方体旋转",                  ID_CUBESPIN
+        MENUITEM "球体光照模型",                ID_GLOBE_LIGHT
+        MENUITEM "三维旋转",                    ID_3DSPIN
+    END
+    POPUP "三维小球动画"
+    BEGIN
+        MENUITEM "开始",                        ID_START
+        MENUITEM "暂停",                        ID_STOP
+        MENUITEM "重播",                        ID_RESTART
+        MENUITEM "停止",                        ID_END
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 2010302590054(&A)...",   ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 2010302590054"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "2010302590054 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2012",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DRAWCHAR DIALOG DISCARDABLE  0, 0, 215, 152
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,89,131,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,158,131,50,14
+    LTEXT           "输入文字:",IDC_STATIC,26,29,35,8
+    LTEXT           "坐标：x：",IDC_STATIC,28,92,37,8
+    LTEXT           "y：",IDC_STATIC,126,90,13,8
+    EDITTEXT        IDC_EDIT_STRING,67,24,119,53,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_X,67,89,34,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Y,150,88,35,15,ES_AUTOHSCROLL
+    PUSHBUTTON      "字体",IDC_BUTTON_FONT,7,131,50,14
+END
+
+IDD_GLOBE_LIGHT DIALOG DISCARDABLE  0, 0, 193, 262
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "光照模型"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "退出",IDCANCEL,138,243,40,11
+    CONTROL         "",IDC_DRAW,"Static",SS_GRAYFRAME,7,7,178,122
+    GROUPBOX        "光点位置",IDC_STATIC,7,133,116,34
+    LTEXT           "X",IDC_STATIC,27,142,8,8
+    EDITTEXT        IDC_EDIT1,15,150,30,12,ES_AUTOHSCROLL
+    LTEXT           "Y",IDC_STATIC,65,142,8,8
+    EDITTEXT        IDC_EDIT2,53,150,29,12,ES_AUTOHSCROLL
+    LTEXT           "Z",IDC_STATIC,102,142,8,8
+    EDITTEXT        IDC_EDIT3,90,150,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "球",IDC_STATIC,7,176,116,34
+    LTEXT           "半径R",IDC_STATIC,15,185,25,8
+    EDITTEXT        IDC_EDIT4,15,193,30,12,ES_AUTOHSCROLL
+    LTEXT           "漫反系数",IDC_STATIC,50,185,34,8
+    EDITTEXT        IDC_EDIT5,53,193,29,12,ES_AUTOHSCROLL
+    LTEXT           "镜反系数",IDC_STATIC,88,185,35,8
+    EDITTEXT        IDC_EDIT6,90,193,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "光属性",IDC_STATIC,7,220,116,34
+    LTEXT           "环境光强",IDC_STATIC,13,228,32,8
+    EDITTEXT        IDC_EDIT7,15,236,30,12,ES_AUTOHSCROLL
+    LTEXT           "光点光强",IDC_STATIC,50,228,33,8
+    EDITTEXT        IDC_EDIT8,53,236,29,12,ES_AUTOHSCROLL
+    LTEXT           "光强参量",IDC_STATIC,88,228,32,8
+    EDITTEXT        IDC_EDIT9,90,236,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "球色",IDC_STATIC,130,160,53,76
+    LTEXT           "RGB",IDC_STATIC,148,172,16,8
+    EDITTEXT        IDC_EDIT10,143,183,28,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "应用",IDC_BUTTON1,137,133,40,11
+    PUSHBUTTON      "重置",IDC_BUTTON2,137,147,40,11
+    EDITTEXT        IDC_EDIT11,143,201,28,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,143,219,28,12,ES_AUTOHSCROLL
+END
+
+IDD_LINEWIDE DIALOG DISCARDABLE  0, 0, 156, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置线宽"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,86,75,50,14
+    LTEXT           "请输入线宽",IDC_STATIC,25,36,41,8
+    EDITTEXT        IDC_EDIT1,85,33,40,14,ES_AUTOHSCROLL
+END
+
+IDD_ZOOM DIALOG DISCARDABLE  0, 0, 187, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "缩放"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,75,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,75,50,14
+    LTEXT           "缩放比例：X：",IDC_STATIC,15,43,54,8
+    EDITTEXT        IDC_ZOOM_X,70,41,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ZOOM_Y,129,41,35,14,ES_AUTOHSCROLL
+    LTEXT           "Y：",IDC_STATIC,114,43,14,8
+    LTEXT           "您指定的缩放基点为（可修改）：",IDC_STATIC,15,7,121,8
+    LTEXT           "X：",IDC_STATIC,55,21,14,8
+    EDITTEXT        IDC_BASEPOINT_X,70,19,34,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BASEPOINT_Y,129,19,35,14,ES_AUTOHSCROLL
+    LTEXT           "Y：",IDC_STATIC,114,21,14,8
+END
+
+IDD_CUBESPIN DIALOG DISCARDABLE  0, 0, 247, 190
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "立方体旋转"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,190,160,50,14
+    PUSHBUTTON      "停止",IDC_STOP,190,112,50,14
+    SCROLLBAR       IDC_SCROLLBAR1,12,113,109,11
+    SCROLLBAR       IDC_SCROLLBAR2,12,138,109,11
+    SCROLLBAR       IDC_SCROLLBAR3,12,163,109,11
+    CONTROL         "",IDC_DRAW,"Static",SS_BLACKFRAME | WS_DISABLED,7,7,233,
+                    100
+    PUSHBUTTON      "上下旋转",IDC_BUTTON1,130,113,50,11
+    PUSHBUTTON      "左右旋转",IDC_BUTTON2,130,138,50,11
+    PUSHBUTTON      "前后旋转",IDC_BUTTON3,130,163,50,11
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "2010302590054 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "2010302590054\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2012\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "2010302590054.EXE\0"
+            VALUE "ProductName", "2010302590054 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DRAWCHAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_GLOBE_LIGHT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 256
+    END
+
+    IDD_LINEWIDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_ZOOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+
+    IDD_CUBESPIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 183
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_LINE                CURSOR  DISCARDABLE     "res\\cursor1.cur"
+IDC_MOVE                CURSOR  DISCARDABLE     "res\\cur00001.cur"
+IDC_CIRCLE              CURSOR  DISCARDABLE     "res\\cur00002.cur"
+IDC_SPIN                CURSOR  DISCARDABLE     "res\\cur00003.cur"
+IDC_CHAR                CURSOR  DISCARDABLE     "res\\cur00004.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Computer Graphic\nCG\nMy2010\n\n\nMy2010302590054.Document\nMy2010 Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "2010302590054"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DRAW_DDALINE         "DDA画直线\nDDA直线"
+    ID_DRAW_BCIRCLE         "\nBresenham画圆"
+    ID_CURVE_BEZIER         "\nBezier曲线"
+    ID_CURVE_BSAMPLE        "\nB样条"
+    ID_TRANS_ZOOM           "\n缩放"
+    ID_TRANS_SYMMETRY       "\n对称变换"
+    ID_FILL_SCANLINE        "扫描线填充\n扫描线填充"
+    ID_FILL_EDGE            "边缘填充\n边缘填充"
+    ID_TRANS_MOVE           "\n平移"
+    ID_TRANS_ROTATE         "\n旋转"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CUT_CS               "线段裁剪\n线段裁剪"
+    ID_CUT_POLYGON          "\n多边形裁剪"
+    ID_DRAW_PNCIRCLE        "正负法画圆\n正负法画圆"
+    ID_DRAW_CHAR            "\n画字符"
+    ID_DRAW_POLYGON         "\n画多边形"
+    ID_CUBESPIN             "\n立方体旋转"
+    ID_DRAW_BLINE           "\nBresenham画线法"
+    ID_GLOBE_LIGHT          "\n球体光照模型"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON32808          "\n多边形填充"
+    ID_DRAW_CHAR2           "画字符\n字符"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_BUTTON32816          "\n填充"
+    ID_3DSPIN               "三维旋转\n三维旋转"
+    ID_START                "开始\n开始"
+    ID_STOP                 "暂停\n暂停"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\2010302590054.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

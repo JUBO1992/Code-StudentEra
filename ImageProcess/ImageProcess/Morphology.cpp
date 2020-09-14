@@ -1,0 +1,27 @@
+// Morphology.cpp: implementation of the CMorphology class.
+//
+//////////////////////////////////////////////////////////////////////
+
+#include "stdafx.h"
+#include "imageprocess.h"
+#include "Morphology.h"
+
+#ifdef _DEBUG
+#undef THIS_FILE
+static char THIS_FILE[]=__FILE__;
+#define new DEBUG_NEW
+#endif
+
+//////////////////////////////////////////////////////////////////////
+// Construction/Destruction
+//////////////////////////////////////////////////////////////////////
+
+CMorphology::CMorphology()
+{
+
+}
+
+CMorphology::~CMorphology()
+{
+
+}
